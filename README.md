@@ -1,12 +1,14 @@
 # PFO VVIC Quiz
 
 [![Astro](https://img.shields.io/badge/Astro-5.x-ff5d01?logo=astro&logoColor=white)](https://astro.build/)
-[![Deploy](https://github.com/LucioB16/pfo-vvic-quiz/actions/workflows/deploy.yml/badge.svg)](https://github.com/LucioB16/pfo-vvic-quiz/actions/workflows/deploy.yml)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Actions-222?logo=github)](https://pages.github.com/)
+[![Deploy to GitHub Pages](https://img.shields.io/badge/Deploy%20to%20GitHub%20Pages-live-2ea44f?logo=githubpages&logoColor=white)](https://luciob16.github.io/pfo-vvic-quiz/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-publicado-222?logo=github)](https://luciob16.github.io/pfo-vvic-quiz/)
 [![Storage](https://img.shields.io/badge/storage-localStorage-156f72)](#privacidad)
 [![Questions](https://img.shields.io/badge/preguntas-272-315c9c)](src/data/questions.json)
 
 Mini web estatica en Astro para practicar preguntas PFO VVIC desde un navegador. El cuestionario usa datos locales versionados en el repositorio y guarda un ranking solamente en `localStorage` cuando se completa un intento.
+
+Sitio publicado: [https://luciob16.github.io/pfo-vvic-quiz/](https://luciob16.github.io/pfo-vvic-quiz/)
 
 ## Caracteristicas
 
@@ -67,10 +69,10 @@ Configuracion relevante:
 - `.github/workflows/deploy.yml` instala dependencias, valida el JSON, compila Astro y publica `dist`.
 - El origen de Pages debe quedar en GitHub Actions. Si la API de GitHub no permite activarlo automaticamente, configurarlo en `Settings > Pages > Source > GitHub Actions`.
 
-URL esperada:
+URL publicada:
 
 ```text
-https://LucioB16.github.io/pfo-vvic-quiz/
+https://luciob16.github.io/pfo-vvic-quiz/
 ```
 
 ## Privacidad
