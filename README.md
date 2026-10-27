@@ -1,16 +1,18 @@
 # PFO VVIC Quiz
 
-[![Astro](https://img.shields.io/badge/Astro-5.x-ff5d01?logo=astro&logoColor=white)](https://astro.build/)
-[![Deploy to GitHub Pages](https://img.shields.io/badge/Deploy%20to%20GitHub%20Pages-live-2ea44f?logo=githubpages&logoColor=white)](https://luciob16.github.io/pfo-vvic-quiz/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-publicado-222?logo=github)](https://luciob16.github.io/pfo-vvic-quiz/)
-[![Storage](https://img.shields.io/badge/storage-localStorage-156f72)](#privacidad)
-[![Questions](https://img.shields.io/badge/preguntas-272-315c9c)](src/data/questions.json)
+**Practicá preguntas PFO VVIC en el navegador, con corrección inmediata y resultados al finalizar.**
 
-Mini web estatica en Astro para practicar preguntas PFO VVIC desde un navegador. El cuestionario usa datos locales versionados en el repositorio y guarda un ranking solamente en `localStorage` cuando se completa un intento.
+Cuestionario estático hecho con Astro a partir de un banco versionado de **272 preguntas**. Podés practicar en orden o aleatoriamente; el ranking queda en el navegador y no requiere una cuenta.
 
-Sitio publicado: [https://luciob16.github.io/pfo-vvic-quiz/](https://luciob16.github.io/pfo-vvic-quiz/)
+**[Abrir el cuestionario](https://luciob16.github.io/pfo-vvic-quiz/)** · [Ver origen de las preguntas](PFO%20CORRECTAS%20VVIC.md)
 
-## Caracteristicas
+| Respondé | Revisá | Medí tu avance |
+| :-- | :-- | :-- |
+| Elegí el orden y resolvé preguntas. | Conocé la opción correcta cuando respondés o salteás. | Consultá aciertos, errores, tiempo y ranking local. |
+
+[![Astro](https://img.shields.io/badge/Astro-5-ff5d01?logo=astro&logoColor=white)](https://astro.build/)
+
+## Cómo funciona
 
 - Conversor reproducible desde `PFO CORRECTAS VVIC.md` hacia `src/data/questions.json`.
 - 272 preguntas convertidas con exactamente una opcion correcta por pregunta.
@@ -21,7 +23,24 @@ Sitio publicado: [https://luciob16.github.io/pfo-vvic-quiz/](https://luciob16.gi
 - Ranking local del navegador sin guardar respuestas individuales.
 - Deploy automatico a GitHub Pages mediante GitHub Actions.
 
-## Estructura
+## Desarrollo local
+
+Requisitos locales:
+
+- Bun 1.3 o superior.
+- Node.js compatible con Astro.
+
+Comandos:
+
+```bash
+bun install
+bun run convert
+bun run validate
+bun run dev
+bun run build
+```
+
+## Estructura del repositorio
 
 ```text
 .
@@ -42,24 +61,7 @@ Sitio publicado: [https://luciob16.github.io/pfo-vvic-quiz/](https://luciob16.gi
     └── styles/global.css
 ```
 
-## Desarrollo
-
-Requisitos locales:
-
-- Bun 1.3 o superior.
-- Node.js compatible con Astro.
-
-Comandos:
-
-```bash
-bun install
-bun run convert
-bun run validate
-bun run dev
-bun run build
-```
-
-## Despliegue En GitHub Pages
+## Publicación
 
 El sitio esta configurado para publicarse en GitHub Pages desde GitHub Actions al hacer push a `main`.
 
